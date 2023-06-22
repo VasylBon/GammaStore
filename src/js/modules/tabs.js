@@ -1,4 +1,10 @@
-function tabs(headerSelector, tabSelector, contentSelector, activeClass) {
+const tabs = (
+    headerSelector,
+    tabSelector,
+    contentSelector,
+    activeClass,
+    display = "block",
+) => {
     let header = document.querySelector(headerSelector),
         tab = document.querySelectorAll(tabSelector),
         content = document.querySelectorAll(contentSelector);
@@ -15,7 +21,7 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass) {
     }
 
     function showTabContent(i) {
-        content[i].style.display = "block";
+        content[i].style.display = display;
         content[i].classList.add("animate__zoomIn");
         tab[i].classList.add(activeClass);
     }
@@ -39,6 +45,6 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass) {
             });
         }
     });
-}
+};
 
 export default tabs;

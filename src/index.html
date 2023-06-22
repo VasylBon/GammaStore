@@ -268,7 +268,7 @@
                 </div>
 
                 <!-- Tree -->
-                <div class="row tree glazing_content">
+                <div class="row tree glazing_content faded">
                     <div class="col-md-6 no-padding">
                         <div class="glazing_cold">
                             <h3>Холодне</h3>
@@ -332,7 +332,7 @@
                 <!-- /Tree -->
 
                 <!-- Aluminum -->
-                <div class="row aluminum glazing_content">
+                <div class="row aluminum glazing_content faded">
                     <div class="col-md-6 no-padding">
                         <div class="glazing_cold">
                             <h3>Холодне</h3>
@@ -396,7 +396,7 @@
                 <!-- /Aluminum -->
 
                 <!-- Plastic -->
-                <div class="row plastic glazing_content">
+                <div class="row plastic glazing_content faded">
                     <div class="col-md-6 col-md-offset-3 no-padding">
                         <div class="glazing_warm">
                             <h3>Тепле</h3>
@@ -432,7 +432,7 @@
                 <!-- /Plastic -->
 
                 <!-- French -->
-                <div class="row french glazing_content">
+                <div class="row french glazing_content faded">
                     <div class="col-md-6 no-padding">
                         <div class="glazing_cold">
                             <h3>Пластик</h3>
@@ -500,7 +500,7 @@
                 <!-- /French -->
 
                 <!-- Rise -->
-                <div class="row rise glazing_content">
+                <div class="row rise glazing_content faded">
                     <div class="col-md-6 no-padding">
                         <div class="glazing_cold">
                             <h3>Алюміній</h3>
@@ -1545,7 +1545,10 @@
 
         <!-- Modals -->
         <!-- Request a call -->
-        <div class="popup">
+        <div
+            class="popup"
+            data-modal
+        >
             <div class="popup_dialog">
                 <div class="popup_content text-center">
                     <button
@@ -1593,7 +1596,10 @@
         </div>
 
         <!-- Request an engineer -->
-        <div class="popup_engineer">
+        <div
+            class="popup_engineer"
+            data-modal
+        >
             <div class="popup_dialog">
                 <div class="popup_content text-center">
                     <button
@@ -1641,7 +1647,10 @@
         </div>
 
         <!-- Calculator -->
-        <div class="popup_calc">
+        <div
+            class="popup_calc"
+            data-modal
+        >
             <div class="popup_dialog">
                 <div class="popup_calc_content text-center">
                     <button
@@ -1714,7 +1723,10 @@
             </div>
         </div>
 
-        <div class="popup_calc_profile">
+        <div
+            class="popup_calc_profile"
+            data-modal
+        >
             <div class="popup_dialog">
                 <div class="popup_calc_profile_content text-center">
                     <button
@@ -1774,7 +1786,10 @@
             </div>
         </div>
 
-        <div class="popup_calc_end">
+        <div
+            class="popup_calc_end"
+            data-modal
+        >
             <div class="popup_dialog">
                 <div class="popup_content text-center">
                     <button
@@ -1787,6 +1802,7 @@
                         <form
                             class="form"
                             action="#"
+                            data-calc="end"
                         >
                             <h2>Дякуємо за звернення! <br />Залиште свої дані</h2>
                             <input
